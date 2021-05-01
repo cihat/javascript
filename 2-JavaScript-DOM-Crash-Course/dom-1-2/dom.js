@@ -57,7 +57,7 @@ li[1].style.backgroundColor = "#fff445";
 for (let i = 0; i <= li.length; i++) {
   li[i].style.backgroundColor = "#f3f3f3";
 } */
-
+/* 
 //! QUERYSELECTOR
 let header = document.querySelector("#main-header")
 header.style.borderBottom = "solid 4px #ccc"
@@ -84,12 +84,80 @@ items.forEach(item => {
 });
 oddItems.forEach(item => {
   item.style.backgroundColor = "#f4f4f4"
-});
+}); */
 
+// let itemList = document.querySelector("#items");
+//! parentNode
+/* console.log(itemList.parentNode);
+itemList.parentNode.style.backgroundColor = "#f4f4f4";
+// itemList.parentNode.style.display = "none";
+console.log(itemList.parentNode.parentNode.parentNode) */
 
+//! parentElement
+/* console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = "#f4f4f4";
+// itemList.parentElement.style.display = "none";
+console.log(itemList.parentElement.parentElement.parentElement) */
 
+//! childNodes
+/* 
+console.log(itemList.childNodes) */
 
+//! children
+/* console.log(itemList.children)
+itemList.children[1].style.backgroundColor = "blue" */
 
+/* //! firstChild
+console.log(itemList.firstChild)
+
+//! firstElementChild
+console.log(itemList.firstElementChild)
+itemList.firstElementChild.style.backgroundColor = "pink" */
+
+//! lastChild
+console.log(itemList.lastChild);
+
+//! lastElementChild
+/* console.log(itemList.lastElementChild)
+itemList.lastElementChild.style.backgroundColor = "pink"
+ */
+
+//! nextSibling
+/* console.log(itemList.nextSibling)
+console.log(itemList.nextElementSibling)
+ */
+//! previousSibling
+/* console.log(itemList.previousSibling)
+console.log(itemList.previousElementSibling)
+itemList.previousElementSibling.style.color = "green" */
+
+//! createElement
+// let newDiv = document.createElement("div");
+
+//! add class --> className
+// newDiv.className = "hello";
+
+//! add id --> idName
+// newDiv.id = "hello";
+
+//! add attribute
+// newDiv.setAttribute("title", "Hello Div");
+
+//! create text node
+// let newDivText = document.createTextNode('Hello World!')
+
+//! Add text to div
+// newDiv.appendChild(newDivText);
+// let container = document.querySelector('header .container')
+// let h1 = document.querySelector('header h1')
+
+//! insertBefore (1., 2.) 2.'den önce gelmesi içindir.
+// container.appendChild(newDiv)
+// container.insertBefore(newDiv, h1)
+
+// newDiv.style.fontSize = '60px'
+
+// console.log(newDiv)
 
 /* 
 // console.log(document.domain);
