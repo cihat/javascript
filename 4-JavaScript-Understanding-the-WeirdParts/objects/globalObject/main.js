@@ -176,10 +176,18 @@ null is an object. undefined is of type undefined.
 null !== undefined but null == undefined. */
 
 
-var a = 3 + 4 * 5;
+/* var a = 3 + 4 * 5;
 console.log(a)
 
 null == 0 //! false
 null < 1 //! true
 "" == 0 //! true
-"" == false //! true
+"" == false //! true 
+*/
+
+// default value 
+function greet(name = "Person") {
+  console.log('Hello ', name)
+}
+
+greet();
