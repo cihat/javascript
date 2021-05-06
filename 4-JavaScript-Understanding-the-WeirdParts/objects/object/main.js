@@ -211,3 +211,5 @@ function greet(whattosay) {
 }
 
 greet('Hi')("Tony")
+
+//! 18.Understanding Clouser - Part 2'de kaldım
