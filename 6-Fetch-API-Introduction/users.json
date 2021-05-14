@@ -1,0 +1,37 @@
+[
+  {
+    "id":1,
+    "name":"Hasan",
+    "email":"hasan@gmail.com"
+  },
+  {
+    "id":2,
+    "name":"Murat",
+    "email":"murat@gmail.com"
+  },
+  {
+    "id":3,
+    "name":"Veli",
+    "email":"veli@gmail.com"
+  },
+  {
+    "id":4,
+    "name":"Ayse",
+    "email":"ayse@gmail.com"
+  },
+  {
+    "id":5,
+    "name":"Zeynep",
+    "email":"zeynep@gmail.com"
+  },
+  {
+    "id":6,
+    "name":"Funda",
+    "email":"funda@gmail.com"
+  },
+  {
+    "id":7,
+    "name":"Necmi",
+    "email":"necmi@gmail.com"
+  }
+]
