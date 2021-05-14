@@ -18,47 +18,419 @@ Other Style Guides
   - [CSS & Sass](https://github.com/airbnb/css)
   - [Ruby](https://github.com/airbnb/ruby)
 
-## Table of Contents
+## Table of Contents :bookmark_tabs:
 
-  1. [Types](#types)
-  1. [References](#references)
-  1. [Objects](#objects)
-  1. [Arrays](#arrays)
-  1. [Destructuring](#destructuring)
-  1. [Strings](#strings)
-  1. [Functions](#functions)
-  1. [Arrow Functions](#arrow-functions)
-  1. [Classes & Constructors](#classes--constructors)
-  1. [Modules](#modules)
-  1. [Iterators and Generators](#iterators-and-generators)
-  1. [Properties](#properties)
-  1. [Variables](#variables)
-  1. [Hoisting](#hoisting)
-  1. [Comparison Operators & Equality](#comparison-operators--equality)
-  1. [Blocks](#blocks)
-  1. [Control Statements](#control-statements)
-  1. [Comments](#comments)
-  1. [Whitespace](#whitespace)
-  1. [Commas](#commas)
-  1. [Semicolons](#semicolons)
-  1. [Type Casting & Coercion](#type-casting--coercion)
-  1. [Naming Conventions](#naming-conventions)
-  1. [Accessors](#accessors)
-  1. [Events](#events)
-  1. [jQuery](#jquery)
-  1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
-  1. [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
-  1. [Standard Library](#standard-library)
-  1. [Testing](#testing)
-  1. [Performance](#performance)
-  1. [Resources](#resources)
-  1. [In the Wild](#in-the-wild)
-  1. [Translation](#translation)
-  1. [The JavaScript Style Guide Guide](#the-javascript-style-guide-guide)
-  1. [Chat With Us About JavaScript](#chat-with-us-about-javascript)
-  1. [Contributors](#contributors)
-  1. [License](#license)
-  1. [Amendments](#amendments)
+  1. :clipboard: [Types](#types)
+     <details>
+     <summary>View contents</summary>
+
+       - [1.1](#types--primitives) Primitives
+       - [1.2](#types--complex) Complex
+
+     </details>
+
+  1. :link: [References](#references)
+     <details>
+     <summary>View contents</summary>
+
+       - [2.1](#references--prefer-const) Prefer `const`
+       - [2.2](#references--disallow-var) Disallow `var`
+       - [2.3](#references--let-require) `let` for `require()`
+       - [2.4](#references--block-scope) Block scope
+
+     </details>
+
+  1. :package: [Objects](#objects)
+     <details>
+     <summary>View contents</summary>
+
+     - [3.1](#objects--no-new) Literals
+     - [3.2](#es6-computed-properties) Computed properties
+     - [3.3](#es6-object-shorthand) Object shorthand
+     - [3.4](#es6-object-concise) Object concise
+     - [3.5](#objects--grouped-shorthand) Grouped shorthand
+     - [3.6](#objects--quoted-props) Quoted properties
+     - [3.7](#objects--prototype-builtins) Prototype Builtins
+     - [3.8](#objects--rest-spread) Rest spread
+
+     </details>
+
+  1. :bookmark_tabs: [Arrays](#arrays)
+     <details>
+     <summary>View contents</summary>
+
+     - [4.1](#arrays--literals) Literals
+     - [4.2](#arrays--push) Push
+     - [4.3](#es6-array-spreads) Array spreads
+     - [4.4](#arrays--from-iterable) spread for iterable
+     - [4.5](#arrays--from-array-like) Array-like objects
+     - [4.6](#arrays--mapping) Mapping
+     - [4.7](#arrays--callback-return) Callback return
+     - [4.8](#arrays--bracket-newline) Linebreaks
+
+     </details>
+
+  1. :hammer: [Destructuring](#destructuring)
+     <details>
+     <summary>View contents</summary>
+
+     - [5.1](#destructuring--object) Object destructuring
+     - [5.2](#destructuring--array) Array destructuring
+     - [5.3](#destructuring--object-over-array) Object over array
+
+     </details>
+
+  1. :page_facing_up: [Strings](#strings)
+     <details>
+     <summary>View contents</summary>
+
+     - [6.1](#strings--quotes) Quotes
+     - [6.2](#strings--line-length) Length
+     - [6.3](#es6-template-literals) Template literals
+     - [6.4](#strings--eval) Eval
+     - [6.5](#strings--escaping) Escaping
+     - [6.6](#strings--regex) Regular Expressions (RegEx)
+
+     </details>
+
+  1. :pager: [Functions](#functions)
+     <details>
+     <summary>View contents</summary>
+
+     - [7.1](#functions--use-strict) Strict mode
+     - [7.2](#functions--declarations) Declarations
+     - [7.3](#functions--iife) IIFE's
+     - [7.4](#functions--in-blocks) Non-function blocks
+     - [7.5](#functions--note-on-blocks) Blocks (Info)
+     - [7.6](#functions--arguments-shadow) Arguments shadow
+     - [7.7](#es6-rest) Rest
+     - [7.8](#es6-default-parameters) Default parameters
+     - [7.9](#functions--default-side-effects) Side effects
+     - [7.10](#functions--defaults-last) Defaults last
+     - [7.11](#functions--constructor) Function constructor
+     - [7.12](#functions--signature-spacing) Signature spacing
+     - [7.13](#functions--mutate-params) Mutating parameters
+     - [7.14](#functions--reassign-params) Reassigning parameters
+     - [7.15](#functions--spread-vs-apply) Spread
+     - [7.16](#functions--signature-invocation-indentation) Signature invocation indentation
+
+     </details>
+
+  1. :arrow_right: [Arrow Functions](#arrow-functions)
+     <details>
+     <summary>View contents</summary>
+
+     - [8.1](#arrows--use-them) Usage
+     - [8.2](#arrows--implicit-return) Implicit return
+     - [8.3](#arrows--paren-wrap) Wrap
+     - [8.4](#arrows--one-arg-parens) Omitting parentheses
+     - [8.5](#arrows--confusing) Confusing functions
+     - [8.6](#whitespace--implicit-arrow-linebreak) Linebreaks
+
+     </details>
+
+  1. :triangular_ruler: [Classes & Constructors](#classes--constructors)
+     <details>
+     <summary>View contents</summary>
+
+     - [9.1](#constructors--use-class) Use `class`
+     - [9.2](#constructors--extends) Inheritance
+     - [9.3](#constructors--chaining) Chaining
+     - [9.4](#constructors--tostring) toString methods
+     - [9.5](#constructors--no-useless) No empty constructors
+     - [9.6](#classes--no-duplicate-members) No duplicate members
+     - [9.7](#classes--methods-use-this) `this` in Class-Methods
+
+     </details>
+
+  1. :postbox: [Modules](#modules)
+     <details>
+     <summary>View contents</summary>
+
+     - [10.1](#modules--use-them) CommonJS 
+     - [10.2](#modules--no-duplicate-imports) Duplicate imports
+     - [10.3](#modules--no-mutable-exports) Mutable exports
+     - [10.4](#modules--imports-first) Imports first
+     - [10.5](#modules--import-extensions) Imports extensions
+     - [10.6](#modules--multiline-imports-over-newlines) Multiline imports
+
+     </details>
+
+  1. :arrows_clockwise: [Iterators and Generators](#iterators-and-generators)
+     <details>
+     <summary>View contents</summary>
+
+     - [11.1](#iterators--nope) Higher-order functions
+     - [11.2](#generators--nope) Generators
+     - [11.3](#generators--spacing) Spacing
+
+     </details>
+
+  1. :bookmark_tabs: [Properties](#properties)
+     <details>
+     <summary>View contents</summary>
+
+     - [12.1](#properties--dot) Dot notation
+     - [12.2](#properties--bracket) Bracket notation
+     - [12.3](#es2016-properties--exponentiation-operator) Exponentiation operator
+
+     </details>
+
+  1. :floppy_disk: [Variables](#variables)
+     <details>
+     <summary>View contents</summary>
+
+     - [13.1](#variables--const) Global namespace
+     - [13.2](#variables--one-const) Declaration per variable
+     - [13.3](#variables--const-let-group) Grouping
+     - [13.4](#variables--define-where-used) Placing
+     - [13.5](#variables--no-chain-assignment) Chain assignment
+     - [13.6](#variables--unary-increment-decrement) Increment & decrement
+     - [13.7](#variables--linebreak) Linebreaks
+     - [13.8](#variables--no-unused-vars) Unused variables
+     - [13.9](#variables--bitwise-floor) Bitwise floor
+
+     </details>
+
+  1. :arrow_heading_up: [Hoisting](#hoisting)
+     <details>
+     <summary>View contents</summary>
+
+     - [14.1](#hoisting--about) About
+     - [14.2](#hoisting--anon-expressions) Anonymous function expressions
+     - [14.3](#hoisting--named-expressions) Named function expressions
+     - [14.4](#hoisting--declarations) Function declarations
+
+     </details>
+
+  1. :left_right_arrow: [Comparison Operators & Equality](#comparison-operators--equality)
+     <details>
+     <summary>View contents</summary>
+
+     - [15.1](#comparison--eqeqeq) Strict comparison
+     - [15.2](#comparison--if) Conditional statements
+     - [15.3](#comparison--shortcuts) Shortcuts
+     - [15.4](#comparison--moreinfo) Truth Equality
+     - [15.5](#comparison--switch-blocks) Switch blocks
+     - [15.6](#comparison--nested-ternaries) Nested ternaries
+     - [15.7](#comparison--unneeded-ternary) Unneeded-ternaries
+     - [15.8](#comparison--no-mixed-operators) Mixed operators
+
+     </details>
+
+  1. :black_square_button: [Blocks](#blocks)
+     <details>
+     <summary>View contents</summary>
+
+     - [16.1](#blocks--braces) Braces
+     - [16.2](#blocks--cuddled-elses) Cuddled elses
+     - [16.3](#blocks--no-else-return) Returns
+
+     </details>
+
+  1. :wrench: [Control Statements](#control-statements)
+     <details>
+     <summary>View contents</summary>
+
+     - [17.1](#control-statements) Length
+     - [17.2](#control-statements--value-selection) Selection operators
+
+     </details>
+
+  1. :pencil: [Comments](#comments)
+     <details>
+     <summary>View contents</summary>
+
+     - [18.0](#comments--language) Language
+     - [18.1](#comments--multiline) Multi-line
+     - [18.2](#comments--singleline) Single-line
+     - [18.3](#comments--spaces) Spaces
+     - [18.4](#comments--actionitems) Prefixing / Action-items
+     - [18.5](#comments--fixme) FixMe
+     - [18.6](#comments--todo) ToDo
+
+     </details>
+
+  1. :white_circle: [Whitespace](#whitespace)
+     <details>
+     <summary>View contents</summary>
+
+     - [19.1](#whitespace--spaces) Soft tabs
+     - [19.2](#whitespace--before-blocks) Space Before blocks
+     - [19.3](#whitespace--around-keywords) Around keywords
+     - [19.4](#whitespace--infix-ops) Infix operators
+     - [19.5](#whitespace--lf-linebreaks) LF Line-breaks
+     - [19.6](#whitespace--newline-at-end) End of file
+     - [19.7](#whitespace--chains) Chains
+     - [19.8](#whitespace--after-blocks) After blocks
+     - [19.9](#whitespace--padded-blocks) Padded blocks
+     - [19.10](#whitespace--in-parens) Inside parentheses
+     - [19.11](#whitespace--in-brackets) Inside brackets
+     - [19.12](#whitespace--in-braces) Inside curly braces
+     - [19.13](#whitespace--max-len) Line length
+     - [19.14](#whitespace--block-spacing) Block spacing
+     - [19.15](#whitespace--comma-spacing) Comma spacing
+     - [19.16](#whitespace--computed-property-spacing) Computed properties
+     - [16.17](#whitespace--func-call-spacing) Function call spacing
+     - [19.18](#whitespace--key-spacing) Key spacing
+     - [19.19](#whitespace--no-trailing-spaces) No Trailing spaces
+     - [19.20](#whitespace--no-multiple-empty-lines) Multiple empty lines 
+
+     </details>
+
+  1. :small_red_triangle_down: [Commas](#commas)
+     <details>
+     <summary>View contents</summary>
+
+       - [20.1](#commas--leading-trailing) Leading commas
+       - [20.2](#commas--dangling) Comma Dangling
+
+     </details>
+
+  1. :heavy_exclamation_mark: [Semicolons](#semicolons)
+     <details>
+     <summary>View contents</summary>
+
+       - [21.1](#semicolons--required) Use semicolons
+
+     </details>
+
+  1. :twisted_rightwards_arrows: [Type Casting & Coercion](#type-casting--coercion)
+     <details>
+     <summary>View contents</summary>
+
+     - [22.1](#coercion--explicit) Explicit coercion
+     - [22.2](#coercion--strings) Strings
+     - [22.3](#coercion--numbers) Numbers
+     - [22.4](#coercion--comment-deviations) Deviations
+     - [22.5](#coercion--bitwise) Bitwise
+     - [22.6](#coercion--booleans) Booleans
+
+     </details>
+
+  1. :scroll: [Naming Conventions](#naming-conventions)
+     <details>
+     <summary>View contents</summary>
+
+     - [23.0](#naming--language) Language
+     - [23.1](#naming--descriptive) Descriptive
+     - [23.2](#naming--camelCase) camelCase
+     - [23.3](#naming--PascalCase) PascalCase
+     - [23.4](#naming--leading-underscore) Underscores
+     - [23.5](#naming--self-this) `this`
+     - [23.6](#naming--filename-matches-export) Filename
+     - [23.7](#naming--camelCase-default-export) Default export
+     - [23.8](#naming--PascalCase-singleton) Singleton
+     - [23.9](#naming--Acronyms-and-Initialisms) Acronyms and initialisms
+     - [23.10](#naming--uppercase) Uppercase
+     - [23.11](#naming--state-booleans) State-Booleans
+
+     </details>
+
+  1. :arrow_down: [Accessors](#accessors)
+     <details>
+     <summary>View contents</summary>
+
+     - [24.1](#accessors--not-required) Not required accessors
+     - [24.2](#accessors--no-getters-setters) Getters & Setters
+     - [24.3](#accessors--boolean-prefix) Boolean prefix
+     - [24.4](#accessors--consistent) Consistency
+
+     </details>
+
+  1. :high_brightness: [Events](#events)
+     <details>
+     <summary>View contents</summary>
+
+     - [25.1](#events--hash) Hash
+
+     </details>
+
+  1. :book: [Standard Library](#standard-library)
+     <details>
+     <summary>View contents</summary>
+
+     - [26.1](#standard-library--isnan) isNaN
+     - [26.2](#standard-library--isfinite) isFinite
+
+     </details>
+
+  1. :nut_and_bolt: [jQuery](#jquery)
+     <details>
+     <summary>View contents</summary>
+
+     - [27.1](#jquery--dollar-prefix) Prefix
+     - [27.2](#jquery--cache) Cache
+     - [27.3](#jquery--queries) DOM queries
+     - [27.4](#jquery--find) Find
+     - [27.5](#jquery--on) Shorthands
+     - [27.6](#jquery--ready) Don't bloat `.ready()`
+
+     </details>
+
+  1. :arrows_counterclockwise: [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
+     <details>
+     <summary>View contents</summary>
+
+     - [28.1](#es5-compat--kangax) Compatibility table
+
+     </details>
+
+  1. :six: [ECMAScript 6+ (ES 2015+) Styles](#ecmascript-6-es-2015-styles)
+     <details>
+     <summary>View contents</summary>
+
+     - [29.1](#es6-styles) ES6 Styles
+     - [29.2](#tc39-proposals) Proposals
+
+     </details>
+
+  1. :electric_plug: [Testing](#testing)
+     <details>
+     <summary>View contents</summary>
+
+     - [30.1](#testing--tests) Tests
+
+     </details>
+
+  1. :chart_with_upwards_trend: [Performance](#performance)
+     <details>
+     <summary>View contents</summary>
+
+     - [31.1](#performance--performance) Performance
+
+     </details>
+
+  1. :books: [Resources](#resources)
+     <details>
+     <summary>View contents</summary>
+
+     - [32.1](#resources--learning-es6) Learning ES6+
+     - [32.2](#resources--read-this) Read This
+     - [32.3](#resources--tools) Tools
+     - [32.4](#resources--further-reading) Further Reading
+     - [32.5](#resources--books) Books
+     - [32.6](#resources--blogs) Blogs
+     - [32.7](#resources--podcasts) Podcasts
+
+     </details>
+
+  1. :copyright: [Copyright](#copyright)
+     <details>
+     <summary>View contents</summary>
+
+     - [33.1](#copyright--base) Base
+     - [33.2](#copyright--license) License
+
+     </details>
+
+  1. :recycle: [Amendments](#amendments)
+     <details>
+     <summary>View contents</summary>
+
+     - [34.1](#amendments--forking) Forking
+
+     </details>
 
 ## Types
 
