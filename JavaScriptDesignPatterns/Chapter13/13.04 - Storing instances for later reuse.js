@@ -5,17 +5,17 @@ var DisplayModule = new Interface('DisplayModule', ['show', 'hide', 'state']);
 /* DialogBox class. */
 
 var DialogBox = function() { // implements DisplayModule
-  ...  
+  // ...  
 };
 DialogBox.prototype = {
   show: function(header, body, footer) { // Sets the content and shows the
-    ...                                  // dialog box.
+    // ...                                  // dialog box.
   },
   hide: function() { // Hides the dialog box.
-    ...
+    // ...
   },
   state: function() { // Returns 'visible' or 'hidden';
-    ...
+    // ...
   }
 };
 
