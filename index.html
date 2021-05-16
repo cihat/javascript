@@ -109,101 +109,173 @@
     .projects ul li a:active {
       color: black;
     }
+
+    /* details */
+    details>summary {
+      list-style-type: none;
+    }
+
+    details>summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details>summary::before {
+      content: '▶️';
+    }
+
+    details[open]>summary::before {
+      content: '🔽';
+    }
+
+    details {
+      padding: 0.5rem;
+      display: inline-block;
+      cursor: pointer;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    details[open]>summary {
+      margin-bottom: 0.5rem;
+    }
   </style>
   <div class="projects">
     <div class="title">
       <h1>JavaScript Projects</h1>
-      <p>Open Source projects are a project to improve your JavaScript knowledge with JavaScript documentation, design
+      <p>Open Source projects are a project to improve your JavaScript knowledge with JavaScript documentations, design
         patterns, books.</p>
     </div>
     <ul>
       <li>
-        <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS">
-          <h3>You Don't Know JavaScript✨✌</h3>
+        <a target="_blank"
+          href="https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md#javascript"
+          title="📚 Freely available programming books">
+          <h3>📚Free JavaScript(Other Programming Languages) Books</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://github.com/cihat/javascript/tree/master/JavaScriptDesignPatterns">
-          <h3>Pro JavaScript Design Patterns </h3>
+        <a target="_blank" href="https://pepa.holla.cz/wp-content/uploads/2016/08/Pro-JavaScript-Design-Patterns.pdf"
+          title="Pro JavaScript Design Patterns Pdf">
+          <h3>✌Pro JavaScript Design Patterns </h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./1-JavaScript-Crash-Course-For-Beginners/index.html">
-          <h3>01-JavaScript-Crash-Course-For-Beginners</h3>
+        <a target="_blank" href="https://github.com/trekhleb/javascript-algorithms" title="📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings">
+          <h3>📝javascript-algorithms</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./2-JavaScript-DOM-Crash-Course/dom-3/index.html">
-          <h3>02-JavaScript-DOM-Crash-Course</h3>
+        <a target="_blank" href="https://github.com/sorrycc/awesome-javascript" title="🐢 A collection of awesome browser-side JavaScript libraries, resources and shiny things.">
+          <h3>🐢awesome-javascript</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./3-es6/index.html">
-          <h3>03-ES6</h3>
+        <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS" title="A book series on JavaScript. @YDKJS on twitter.">
+          <h3>👍You Don't Know JavaScript</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./4-JavaScript-BookList-App-No-Frameworks/index.html">
-          <h3>04-JavaScript-BookList-App-No-Frameworks</h3>
+      <li>
+        <a target="_blank" href="https://github.com/lydiahallie/javascript-questions" title="A long list of (advanced) JavaScript questions, and their explanations ✨">
+          <h3>🤞javascript-questions</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./5-JavaScript-Understanding-the-WeirdParts/objects/object/index.html">
-          <h3>05-Objects</h3>
+        <a target="_blank" href="https://github.com/ryanmcdermott/clean-code-javascript" title="🛁 Clean Code concepts adapted for JavaScript">
+          <h3>🛁clean-code-javascript</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./6-Fetch-API-Introduction/index.html">
-          <h3>06-Fetch-API-Introduction</h3>
+        <a target="_blank" href="https://github.com/denysdovhan/wtfjs" title="🤪 A list of funny and tricky JavaScript examples">
+          <h3>👏Airbnb-Style-Guide</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+      <li>
+        <a target="_blank" href="https://github.com/airbnb/javascript" title="JavaScript Style Guide">
+          <h3>🤪wtfjs</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/mbeaudru/modern-js-cheatsheet"
+          title="Cheatsheet for the JavaScript knowledge you will frequently encounter in modern projects.">
+          <h3>😎modern-js-cheatsheet</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/goldbergyoni/javascript-testing-best-practices" title="📗🌐 🚢 Comprehensive and exhaustive JavaScript & Node.js testing best practices (May 2021)">
+          <h3>📗🌐🚢javascript-testing-best-practices</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/leonardomso/33-js-concepts"
+          title="📜 33 JavaScript concepts every developer should know.">
+          <h3>📜33-js-concepts</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/elsewhencode/project-guidelines"
+          title="A set of best practices for JavaScript projects">
+          <h3>💯project-guidelines</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/AllThingsSmitty/must-watch-javascript" title="A useful list of must-watch talks about JavaScript">
+          <h3>📺must-watch-javascript</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://github.com/andrew--r/channels"
+          title="📺 A collection of useful YouTube channels for javascript developers and web designers">
+          <h3>📺channels</h3>
         </a>
       </li>
       <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
+        <a target="_blank" href="https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX" title="Pure JavaScript PlayList with Traversy Media">
+          <h3>📺JavaScript YouTube PlayList(Traversy Media)</h3>
         </a>
       </li>
-      <li>
-        <a target="_blank" href="./">
-          <h3>to be continuous...</h3>
-        </a>
-      </li>
-
     </ul>
+    <details>
+      <summary><b>More(Javascript Threads)...</b></summary>
+      <ul>
+        <li>
+          <a target="_blank" href="./1-JavaScript-Crash-Course-For-Beginners/index.html">
+            <h3>01-JavaScript-Crash-Course-For-Beginners</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./2-JavaScript-DOM-Crash-Course/dom-3/index.html">
+            <h3>02-JavaScript-DOM-Crash-Course</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./4-JavaScript-BookList-App-No-Frameworks/index.html">
+            <h3>04-JavaScript-BookList-App-No-Frameworks</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./3-es6/index.html">
+            <h3>03-ES6</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./5-JavaScript-Understanding-the-WeirdParts/objects/object/index.html">
+            <h3>05-Objects</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./6-Fetch-API-Introduction/index.html">
+            <h3>06-Fetch-API-Introduction</h3>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="./">
+            <h3>To be continuous...</h3>
+          </a>
+        </li>
+      </ul>
+    </details>
   </div>
 </body>
 
