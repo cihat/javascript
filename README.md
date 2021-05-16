@@ -1,3 +1,21 @@
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/99xjlspxvvj8ffni7zgu.jpg)
+
+#### It is a project I am trying to list the repos that have received thousands of stars on Github and deemed useful by the JavaScript community.
+
+#### It's a gihub repo that I think might be useful for people who are resource-hungry while running JavaScript, or people who are not aware of these good resources.
+
+#### I think it can be a good content for those who want to find topics such as Repos, Books, YouTube Playlists, Best Practices, Style Guides, Design Patterns, Tests, Concepts, Project Guidelines under one roof.
+
+#### I hope it will be useful for many people to practice learning javascript.
+
+#### You can add links that you think are missing by opening PR, I would be very happy about that.
+
+#### I would be glad if you add the issues I am missing or the points you see incorrectly as a comment.
+
+
+## [Live](https://cihat.github.io/javascript/)
+
+
 # Airbnb JavaScript Style Guide() {
 
 *A mostly reasonable approach to JavaScript*
