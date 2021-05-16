@@ -4376,6 +4376,7 @@ We encourage you to fork this guide and change the rules to fit your team’s st
 
 <hr/>
 
+## Links
 # [YouTube Playlist](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX)
 
 ### This repo is the repo of the notes I got while the javascript was running.
