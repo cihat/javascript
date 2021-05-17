@@ -15,6 +15,14 @@
 
 ## [Live](https://cihat.github.io/javascript/)
 
+## JavaScript 
+Chrome --> V8
+A single-threaded, non-blocking, asynchrous, concurrent language
+Has a call stack, an event loop, a callback queue, some other apis, and stuff...
+the call stack
+one thread == one call stack == one thing at a time
+
+
 
 # Airbnb JavaScript Style Guide() {
 
@@ -4398,3 +4406,10 @@ We encourage you to fork this guide and change the rules to fit your team’s st
 # [YouTube Playlist](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX)
 
 ### This repo is the repo of the notes I got while the javascript was running.
+
+
+# [Eloquent JavaScript](https://eloquentjavascript.net/)
+# [getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+You-Dont-Know-JS/up & going/ch1.md
+
+# [THE ODIN PROJECT/JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
