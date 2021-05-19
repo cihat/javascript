@@ -4403,13 +4403,16 @@ We encourage you to fork this guide and change the rules to fit your team’s st
 <hr/>
 
 ## Links
-# [YouTube Playlist](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX)
+[YouTube Playlist](https://www.youtube.com/playlist?list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX)
+[jstherightway](http://jstherightway.org/)
+[JavaScript-Garden](http://bonsaiden.github.io/JavaScript-Garden/)
+
 
 ### This repo is the repo of the notes I got while the javascript was running.
 
 
-# [Eloquent JavaScript](https://eloquentjavascript.net/)
-# [getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
+[Eloquent JavaScript](https://eloquentjavascript.net/)
+[getify/You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed)
 You-Dont-Know-JS/up & going/ch1.md
 
-# [THE ODIN PROJECT/JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
+[THE ODIN PROJECT/JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
