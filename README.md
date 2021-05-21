@@ -4416,3 +4416,9 @@ We encourage you to fork this guide and change the rules to fit your team’s st
 You-Dont-Know-JS/up & going/ch1.md
 
 [THE ODIN PROJECT/JavaScript](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript)
+
+
+https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/factory-functions-and-the-module-pattern#back-to-factory-functions
+
+
+en son burada kaldım. factory-functions and the module pattern klasöründe
